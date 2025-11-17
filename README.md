@@ -1,5 +1,7 @@
 # PR Reviewer Personality Quiz
 
+- Demo for JS NAtion NYC 25!
+
 A fun and interactive quiz to discover your code review personality! Built with Next.js, Auth0, and CodeRabbit's signature purple branding.
 
 ## Features
