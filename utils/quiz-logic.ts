@@ -23,7 +23,8 @@ export function calculateResult(answers: ArchetypeType[]): QuizResult {
   return {
     archetype: archetypes[winningArchetype],
     score,
-    answersCount: answers.length
+    answersCount: answers.length,
+    answers
   };
 }
 

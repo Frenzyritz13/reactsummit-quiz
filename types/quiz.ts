@@ -28,4 +28,5 @@ export interface QuizResult {
   archetype: Archetype;
   score: Record<ArchetypeType, number>;
   answersCount: number;
+  answers?: ArchetypeType[];
 }

@@ -9,6 +9,7 @@ import { generateSocialShareUrls } from '@/utils/quiz-logic';
 import { Share2, Twitter, MessageSquare, RotateCcw, Trophy, TrendingUp } from 'lucide-react';
 import { toast } from 'sonner';
 import { archetypes } from '@/data/quiz-data';
+import { QuizReview } from '@/components/quiz-review';
 
 interface QuizResultsProps {
   result: QuizResult;
@@ -163,6 +164,11 @@ export function QuizResults({ result, onRetakeQuiz }: QuizResultsProps) {
                   </div>
                 </CardContent>
               </Card>
+
+              {/* Quiz Review - Show user's answers */}
+              {result.answers && result.answers.length > 0 && (
+                <QuizReview answers={result.answers} />
+              )}
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
