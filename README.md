@@ -38,43 +38,5 @@ A fun and interactive quiz to discover your code review personality! Built with 
      AUTH0_CLIENT_SECRET='YOUR_CLIENT_SECRET'
      ```
 
-3. **Run the development server**:
-   ```bash
-   npm run dev
-   ```
 
-4. **Open [http://localhost:3000](http://localhost:3000)** in your browser
 
-## Auth0 Configuration
-
-In your Auth0 dashboard:
-
-1. **Application Settings**:
-   - Application Type: Regular Web Application
-   - Allowed Callback URLs: `http://localhost:3000/api/auth/callback`
-   - Allowed Logout URLs: `http://localhost:3000`
-
-2. **Advanced Settings > OAuth**:
-   - JsonWebToken Signature Algorithm: RS256
-
-## Deployment
-
-The app is configured for static export and can be deployed to:
-- Vercel
-- Netlify
-- Any static hosting provider
-
-For production, update your Auth0 URLs to match your domain.
-
-## Tech Stack
-
-- **Framework**: Next.js 13 with App Router
-- **Authentication**: Auth0
-- **Styling**: Tailwind CSS + shadcn/ui
-- **Icons**: Lucide React
-- **Animations**: CSS animations + Tailwind
-- **Notifications**: Sonner
-
-## License
-
-MIT License - feel free to use this for your own team quizzes!# reactsummit-quiz
